@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-Practice</title>
+    <style>
+        #change_color{
+            /* justify-content: center; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="change_color">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque earum commodi impedit, suscipit nam autem nisi asperiores quos! Rem enim iusto vitae nam dolore quasi perspiciatis deserunt ipsam pariatur aperiam.
+    </div>
+    <button id="change_div_style" onclick="changeStyle();changeHtml();"> Click to Change Div style</button>
+    <script>
+        function changeStyle(){
+        // document.getElementById('change_color').style.color = 'red';
+        document.getElementById('change_color').setAttribute('style','background-color:yellow;color:red;justify-content:center;display:flex;');
+        }
+
+        function changeHtml(){
+        document.getElementById('change_color').innerHTML = 'Hello I am abdur rehman alvi!';
+        // document.getElementById('change_color').textContent = 'Hello I am abdur rehman alvi!';
+
+        }
+    </script>
+</body>
+</html>
